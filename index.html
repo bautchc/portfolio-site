@@ -1,1 +1,184 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coltrane Bautch</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="/static/css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="header-banner" id="page-top">
+    <div class="centered-h1">
+        <h1>Coltrane Bautch</h1>
+    </div>
+</div>
+<div class="top-bar">
+    <ul>
+        <li><a href="#page-top">Home</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+<div class="content-wrapper" id="about-me">
+    <br>
+    <br>
+    <br>
+    <div class="centered-h1">
+        <h1>About Me</h1>
+    </div>
+    <div class="limiting-wrapper">
+        <p>
+            Hi! My name is Coltrane Bautch, and I'm a sophomore computer science student at the Milwaukee School of Engineering with plans of graduating in 2025. I've always had a passion for problem-solving and originally started becoming interested in computer science at a young age from an interest learning how to apply those skills to solving problems in my everyday life. As I've worked on improving my skills, I've set my sights on using the skills I've developed to do what I can to make the world a better place. In my free time, I enjoy learning new programming languages, writing short stories, tutoring ESL speakers in English grammar, and working on my passion project of running one of the largest collaborative fiction writing communities on the internet.
+        </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br id="projects">
+    <div class="dark-bar">
+        <div class="centered-h1">
+            <h1 >Recent Projects</h1>
+        </div>
+        <div class="limiting-wrapper">
+            <div id="project-1"></div>
+            <div id="project-2"></div>
+            <div id="project-3"></div>
+            <div class="projects-top"></div>
+            <div class="project-table">
+                <div class="project project-1-blurb">
+                    <img src="images/kokoLogo.png">
+                    <p>
+                        “Koko” is a bot created for the instant messaging platform, Discord that is currently used in dozens of Discord servers.
+                    </p>
+                    <p>
+                        <a href="#project-1">Read More...</a>
+                    </p>
+                </div>
+                <div class="project project-2-blurb">
+                    <img src="images/stvLogo.png">
+                    <p>
+                        This project was a python program that implemented my own personal algorithm for calculating the results of single transferable vote elections.
+                    </p>
+                    <p>
+                        <a href="#project-2">Read More...</a>
+                    </p>
+                </div>
+                <div class="project project-3-blurb">
+                    <img src="images/uxGameLogo.png">
+                    <p>
+                        “Study.ing” was a project I took on with a small team of three as part of my college user experience class in order to develop and refine the skills necessary for designing future projects.
+                    </p>
+                    <br>
+                    <p>
+                        <a href="#project-3">Read More...</a>
+                    </p>
+                </div>
+            </div>
+            <div class="project-description project-1-description">
+                <p class="top-paragraph">
+                    <b>Summary</b>
+                </p>
+                <p>
+                    “Koko” is a bot created for the instant messaging platform, Discord that is currently used in dozens of Discord servers. Koko is designed to be a companion bot for communities built around sites on the Wikifarm, Wikidot, and it allows users to search for pages on Wikidot sites by name or by author, as well as be notified of any new or deleted pages. To do this, I use the Discord.NET API in C# to operate the bot using asynchronous programming, and I use third-party scraping libraries to look for new pages and keep track of their authors and ratings.
+                </p>
+                <p>
+                    Koko was created in order to give users a more convenient way to use Wikidot sites. Despite how widely used Wikidot is, many of its features are no longer maintained, including its search feature. Because of that, Koko greatly increases the quality of life for those using Wikidot. Additionally, Koko’s feature of notifying users of new pages allows moderators of Wikidot sites to more quickly be aware of new content, which makes it easier to moderate.
+                </p>
+                <p>
+                    Koko was originally created on my own. However, as the scope of the project grew larger, I created a team of two other people to work collaboratively on maintaining and updating the bot with new features.
+                </p>
+                <p>
+                    <b>Analysis</b>
+                </p>
+                <p>
+                    This project was my first time developing code as a team with other people, so through it, I was able to learn a lot about how to proofread other people’s code, and coordinate a team towards a goal, while making sure to take advantage of the efficiency that comes with division of work, while also keeping enough coordination to make sure each team member is producing good code that works with each other.
+                </p>
+                <p>
+                    I also learned a lot about using APIs and third party scraping. Although the .NET version of the Discord API is not nearly as well documented as some other commonly used versions, I was able to figure out how to use it with some research. Wikidot itself also has its own API, but it was behind a paywall and hasn’t been maintained for over a decade, so I opted to use third party scraping for that aspect of the bot. While scraping wasn’t ideal, it taught me how to problem solve and how to come up with clever ways to get the information I needed.
+                </p>
+                <p>
+                    Since Koko is used in dozens of Discord servers, some of which have thousands of members, I was able to get the experience of having my code used by a large number of people in a way I hadn’t before. This was an interesting experience because it showed me how valuable it can be to speak directly to a user base and determine which features they would find helpful in future updates, as well as showing me how important it is to rigorously test your code when something you may have missed could be found by a user base in the thousands in only a few days.
+                </p>
+            </div>
+            <div class="project-description project-2-description">
+                <p class="top-paragraph">
+                    <b>Summary</b>
+                </p>
+                <p>
+                    This project was a python program that implemented my own personal algorithm for calculating the results of single transferable vote elections. Single transferable vote elections are an alternative of the widely-used first past the post election design, in which it has voters submit an ordered list of their ideal candidates rather than a single candidate, and a winner is calculated from those lists in a way that doesn’t punish voters for putting a less popular candidate as their first choice. These types of elections work very well when used on a large scale; however, I found that the most widely used algorithms for calculating the results of a single transferable vote election break down when used with a very small number of voters, such as decisions voted on by a small elected council. To fix this problem, I designed a new algorithm for calculating the results of single transferable vote elections and developed a program in Python that implemented this algorithm.
+                </p>
+                <p>
+                    <b>Analysis</b>
+                </p>
+                <p>
+                    This project taught me a lot about problem solving and algorithmic thinking. The end goal wasn’t very concretely defined since part of the problem that the algorithm was aiming to solve was the difficulty in quantifiably measuring its own results. Due to this issue of actually measuring the performance of the algorithm, I had to shift my focus from finding the “best” algorithm if such a thing exists to instead creating an algorithm that fixes the clear issues in the widely-used algorithm, making it, at the very least, strictly better than that algorithm. This was accomplished by keeping the basic parts of the widely used algorithm for single transferable vote elections and changing aspects of the structure in intuitive ways to fix the blindspots present. Through this I was able to learn new ways of looking at finding the solution to a given problem.
+                </p>
+                <p>
+                    Implementing the algorithm in Python also taught me a lot. Although I intentionally made the algorithm simple and intuitive in concept, that simplicity did not necessarily transfer to the actual implementation, especially while keeping the time complexity of the algorithm as low as possible. To accomplish this, I went through a lot of iterative steps to accomplish this. I started by implementing a brute force program that essentially amounted to throwing a thousand weighted dice that each contained a simpler version of the algorithm, that together would average out to the correct result of the full algorithm. This approach got the right answer, but with a dismal time complexity. From here, I did research on data structures and was able to design a smarter implementation that used trees to cut down the time complexity significantly. Through this, I learned a lot about problem solving and how to think of a problem in different ways to find the most efficient solution.
+                </p>
+            </div>
+            <div class="project-description project-3-description">
+                <p class="top-paragraph">
+                    <b>Summary</b>
+                </p>
+                <p>
+                    Although not actually implemented, “Study.ing” was a project I took on with a small team of three as part of my college user experience class in order to develop and refine the skills necessary for designing future projects. My team and I developed a conceptual prototype, complete with in-depth charts and notes showing how the user would interact with the program. If implemented, Study.ing would have been a study tool that would allow college students to study for their classes more effectively, with many of the features designed based on the results of a survey we gave to several MSOE students. When designing the project, we took into account the feedback from our target audience, as well as the principles of user experience and design in order to produce the best design we could create.
+                </p>
+                <p>
+                    <b>Analysis</b>
+                </p>
+                <p>
+                    The design aspect of the project was much more intensive than most other projects I’ve worked on, as we spent time interviewing members of our target audience, both before starting the design and after our first draft of the prototype was finished in order to create something that would serve them as best as we could. This was very valuable, as it allowed us to see trends in how different people approached studying and allowed us to take into account many potential aspects of the project that we would not have otherwise considered. Through this, I was able to refine the skills of determining the right questions that need to be asked in an interview, as well as determining how to interpret a broader trend from a series of interviews and judge which aspects of the interview are valuable enough to be incorporated into the design.
+                </p>
+                <p>
+                    From the data we gathered in our interviews, we carefully tweaked and adjusted minute aspects of our user experience in order to maintain the balance between discipline and retention necessary for a study tool. This careful process taught me a lot about taking into account even the smallest details to create the optimal user experience for my target user, a skill that will serve me well in future projects.
+                </p>
+            </div>
+            <div class="projects-bottom"></div>
+        </div>
+    </div>
+    <br>
+    <br id="resume">
+    <br>
+    <div class="limiting-wrapper">
+        <div class="centered-h1 resume-header">
+            <h1>Resume</h1>
+            <a href="images/Resume.pdf" download><img src="images/downloadIcon.png"></a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="resume-holder">
+            <img src="images/resume.png">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br id="contact">
+    <br>
+    <div class="dark-bar contact-bar">
+        <div class="contact-footer limiting-wrapper">
+            <h1>Contact Me!</h1>
+            <div>
+                <div class="contact-grid">
+                    <p>
+                        <a href="mailto:coltranebautch@gmail.com">coltranebautch@gmail.com</a>
+                    </p>
+                    <img src="images/gmailIcon.png">
+                    <p>
+                        <a href="tel:608-298-8936">(608)-298-8936</a>
+                    </p>
+                    <img src="images/phoneIcon.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

@@ -22,6 +22,7 @@ body {
     background-color: rgb(var(--background-color));
     font-family: var(--body-font);
     color: rgb(var(--medium-accent));
+    font-size: 1.1rem;
 }
 
 h1 {
@@ -47,9 +48,10 @@ h1 {
 .header-banner h1 {
     color: rgb(var(--background-color));
     position: relative;
-    top: 3rem;
+    top: 2.3rem;
     margin: 0;
     text-shadow: 0.063rem 0.1rem 0.1rem #0c0c0c;
+    font-size: 350%
 }
 
 .top-bar {
@@ -150,9 +152,18 @@ h1 {
 
 .project {
     border: solid rgb(var(--background-color)) 3px;
-    padding: 1rem 1rem 0rem 1rem;
+    padding: 1rem 1rem 0 1rem;
     position: relative;
     background-color: rgba(var(--background-color), 0)
+}
+
+.project > a {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .project a {
@@ -264,6 +275,8 @@ h1 {
     width: 2rem;
     float: right;
 }
+
+
 
 .content-wrapper > :nth-child(1) { animation-delay: calc(1 * var(--fade-in-delay)); }
 .content-wrapper > :nth-child(2) { animation-delay: calc(2 * var(--fade-in-delay)); }
